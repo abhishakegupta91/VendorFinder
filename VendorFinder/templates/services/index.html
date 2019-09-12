@@ -1,21 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="col-sm-6 col-xs-12">
+    <h2>Existing Services</h2>
+</div>
 
-<div class="container">
-    <div class="row">
-     <h1>Home Page</h1>
-     <h3>Welcome</h3>
-     <p>
-     {% if user.is_authenticated %}
-        Hi <b>{{ user.username }}!</b>
-        <a href="{% url 'logout' %}">LogOut</a>
-    </p>
-    {% else %}
-    <p>You are not logged in</p>
-    <p>Please <a href="{% url 'login' %}">Login</a>  to continue.</p>
-    {% endif %}
 
-    </div>
+<div class="col-sm-6 col-xs-12">
+    <h3> Add a new Service</h3>
 </div>
 {% endblock %}

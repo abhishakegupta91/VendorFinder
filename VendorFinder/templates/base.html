@@ -17,22 +17,10 @@
     <body>
     <div class="container">
         <div class="row">
-            <h1>Vendor Finder</h1>
-            <p>Welcome to Vendor Finder Website.</p>
-            <p>
-                    <a href="{% url 'index' %}">Home Page</a> /
-                    <a href="{% url 'signup' %}">Signup</a>
-            </p>
+            <div class="col-md-10 col-sm-12">
+            {% block content %}{% endblock %}
+            </div>
         </div>
-        <hr>
-    </div>
-    <div class="container">
-        <div class="row">
-            {% block content %}
-            {% endblock %}   
-        </div>
-    </div>
     </body>
     </html>
-
 
