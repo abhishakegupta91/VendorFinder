@@ -10,29 +10,23 @@ def index(request):
 
 def cutomer_profile(request):
     context = {}
-    template_name = 'services/customer_profile.html'
+    template_name = 'services/customer-profile.html'
     return render(request, template_name=template_name, context=context)
 
 
 def vendor_profile(request):
     context = {}
-    template_name = 'services/vendor_profile.html'
+    template_name = 'services/vendor-profile.html'
     return render(request, template_name=template_name, context=context)
 
 
 def vendor_customer_request_page(request):
     context = {}
-    template_name = 'services/request_page.html'
+    template_name = 'services/request-page.html'
     return render(request, template_name=template_name, context=context)
 
 
 def vendor_filter_page(request):
     context = {}
-    template_name = 'services/vendor_filter.html'
+    template_name = 'services/vendor-filter.html'
     return render(request, template_name=template_name, context=context)
-
-
-
-
-
-
