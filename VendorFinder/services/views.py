@@ -32,24 +32,6 @@ def vendor_filter_page(request):
     return render(request, template_name=template_name, context=context)
 
 
-def vendor_profile(request):
-    context = {}
-    template_name = 'services/vendor_profile.html'
-    return render(request, template_name=template_name, context=context)
-
-
-def vendor_profile(request):
-    context = {}
-    template_name = 'services/vendor_profile.html'
-    return render(request, template_name=template_name, context=context)
-
-
-def vendor_profile(request):
-    context = {}
-    template_name = 'services/vendor_profile.html'
-    return render(request, template_name=template_name, context=context)
-
-
 
 
 
