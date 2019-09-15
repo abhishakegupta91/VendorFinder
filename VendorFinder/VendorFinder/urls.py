@@ -22,7 +22,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('services/', include(services_urls)),
+  #  path('services/', include(services_urls)),
+     path('api/vi/', include(services_urls)),
 ]
 
 if settings.DEBUG:
