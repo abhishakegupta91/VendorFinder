@@ -1,24 +1,56 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="col-sm-6 col-xs-12">
+<!--
+<div class="col-lg-6 col-sm-6 col-xs-12">
     <h2>Existing Services</h2>
 </div>
 
 
-<div class="col-sm-6 col-xs-12">
+<div class="col-lg-6 col-sm-6 col-xs-12">
     <h3> Add a new Service</h3>
 </div>
+-->
+<nav class="navbar navbar-dark bg-dark">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-4">Vendor Finder</h1>
+  <p>A platform to meet customers with service providers.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Read more</a>
+</div>
 
 
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
+
+  <div class="row">
+    <div class="col">
+<a href="#"><div class="card" style="width: 200px;">
+  <img src="/static/images/V.png" class="card-img-top" alt="...">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#"> <h5 class="card-title"><center>Vendors</center></h5></a>
+ <!--   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
-{% endblock %}
+</a>
+    </div>
 
+      <div class="col">
+<a href="#"><div class="card" style="width: 200px;">
+  <img src="/static/images/C.png" class="card-img-top" alt="...">
+  <div class="card-body">
+      <a href="#"><h5 class="card-title"><center>Customers</center></h5></a>
+ <!--   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a> -->
+  </div>
+</div>
+</a>
+      </div>
+  </div>
+
+{% endblock %}
 
